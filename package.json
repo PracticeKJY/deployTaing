@@ -6,7 +6,8 @@
   "scripts": {
     "all": "run-p serve start",
     "serve": "npx json-server server/db/data.json",
-    "start": "npx live-server client --host=localhost --port=5500"
+    "start": "npx live-server client --host=localhost --port=5500",
+    "build": "parcel build client/index.html"
   },
   "devDependencies": {
     "@types/eslint": "^8.4.10",
@@ -28,6 +29,8 @@
   "license": "ISC",
   "dependencies": {
     "eslint-config-prettier": "^8.6.0",
-    "eslint-plugin-prettier": "^4.2.1"
+    "eslint-plugin-prettier": "^4.2.1",
+    "parcel-bundler": "^1.12.5",
+    "swiper": "^9.4.1"
   }
 }
