@@ -7,7 +7,7 @@
     "all": "run-p serve start",
     "serve": "npx json-server server/db/data.json",
     "start": "npx live-server client --host=localhost --port=5500",
-    "build": "parcel build client/index.html"
+    "build": "parcel build client/*.html -d ./build --public-url ./"
   },
   "devDependencies": {
     "@types/eslint": "^8.4.10",
